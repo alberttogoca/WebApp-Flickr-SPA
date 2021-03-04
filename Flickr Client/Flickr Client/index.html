@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<!-- Required meta tags -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Práctica 2</title>
+
+<!-- BOOTSTRAP CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!--JQUERY-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!--JS-->
+<script src="./credencialesFlickr.js"></script>
+<script src="./js/codigoJS.js"></script>
+
+<!--AMPLIAR-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<!--TIMELINE-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css" />
+<link rel="stylesheet" href="./css/style-albe-timeline.css" />
+<script src="./js/jquery-albe-timeline.min.js"></script>
+
+</head>
+
+<body>
+
+	<!--Barra de navegacion-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-1" >
+
+			<!--Icono-->
+			<a class="navbar-brand" href="#" onclick="inicio()"><img  src="./icon/flickr_icon.png" width="30" height="30" class="img-fluid" alt="Responsive image"/></a>		
+			
+
+			<!--Titulo-->
+			<a class="navbar-brand" href="#" onclick="inicio()"><h2>FOTOS DE FLICKR</h2></a>
+		
+			<div class="navbar-nav-scroll">
+				<ul class="navbar-nav bd-navbar-nav flex-row">
+
+						<!--Inicio-->
+						<li class="nav-item">
+								<button type="button" id="inicio" onclick="inicio()" class="btn btn-link btn-lg"><span class="badge badge-secondary"><h4>Inicio</h4></span></button>
+						</li>
+							
+						<!--Familia Y Amigo-->
+						<li class="nav-item">
+							<button type="button" id="familiaYAmigos" onclick="familiaYAmigos()" class="btn btn-link btn-lg"><span class="badge badge-secondary"><h4>Familia Y Amigos</h4></span></button>
+						</li>
+				</ul>
+			</div>
+			
+	</nav>
+	
+	<br></br>
+
+	<!--Fotos principales y Familia y Amigos-->
+	<section>
+        <div class="container-fluid" ><div  id="fotos" class="row"></div></div>
+	</section>
+
+	<!--Fotos de un usuario en Timeline-->
+	<section>
+        <div class="container-fluid" ><div  id="myTimeline" ></div></div>
+    </section>
+	
+
+</body>
+</html>
